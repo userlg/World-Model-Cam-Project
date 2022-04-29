@@ -4,6 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+flask = "*"
+colorama = "*"
+python-dotenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 
