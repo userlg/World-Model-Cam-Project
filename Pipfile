@@ -8,6 +8,7 @@ flask = "*"
 colorama = "*"
 python-dotenv = "*"
 gunicorn = "*"
+uuid = "*"
 
 [dev-packages]
 
