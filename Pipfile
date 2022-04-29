@@ -9,6 +9,7 @@ colorama = "*"
 python-dotenv = "*"
 gunicorn = "*"
 uuid = "*"
+flask-pymongo = "*"
 
 [dev-packages]
 
