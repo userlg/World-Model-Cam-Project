@@ -12,6 +12,7 @@ class Config(object):
 class ProductionConfig(Config):
    ENV = os.environ.get("prod_env")
    DEBUG = os.environ.get("prod_debug")
+   MONGO_URI = os.environ.get("prod_mongo_uri")
 
 
 class DevelopmentConfig(Config):

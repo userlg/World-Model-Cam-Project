@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7f9eb34f69cf87f2a15e165750eb2bce2e47384229dad8d127a7c63bf514db36"
+            "sha256": "f8de47c19070447ede26440c3cc3a729d539e712ddc95fce58231f156bf1e6a0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,6 +32,21 @@
             "index": "pypi",
             "version": "==0.4.4"
         },
+        "dnspython": {
+            "hashes": [
+                "sha256:0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e",
+                "sha256:a851e51367fb93e9e1361732c1d60dab63eff98712e503ea7d92e6eccb109b4f"
+            ],
+            "markers": "python_version >= '3.6' and python_version < '4.0'",
+            "version": "==2.2.1"
+        },
+        "email-validator": {
+            "hashes": [
+                "sha256:2323219d19b82f887b64f2a84c6d73f451431bdf87744022c54b1b5bd0bde1bd",
+                "sha256:565fd3a7aa4516772f55732d50d34d0a18680b5f62995aea8b4a55b62c90c517"
+            ],
+            "version": "==1.2.0"
+        },
         "flask": {
             "hashes": [
                 "sha256:315ded2ddf8a6281567edb27393010fe3406188bafbfe65a3339d5787d89e477",
@@ -39,6 +54,14 @@
             ],
             "index": "pypi",
             "version": "==2.1.2"
+        },
+        "flask-mongoengine": {
+            "hashes": [
+                "sha256:2db13140ce7f61a935e75268190450d5ecc9b60a7310fd289f9511835aa105d4",
+                "sha256:ce68726d2be8d88006e88f17e4be3b7ad07c79ca8dedb60653d3dab5d9485840"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
         },
         "flask-pymongo": {
             "hashes": [
@@ -48,6 +71,14 @@
             "index": "pypi",
             "version": "==2.3.0"
         },
+        "flask-wtf": {
+            "hashes": [
+                "sha256:34fe5c6fee0f69b50e30f81a3b7ea16aa1492a771fe9ad0974d164610c09a6c9",
+                "sha256:9d733658c80be551ce7d5bc13c7a7ac0d80df509be1e23827c847d9520f4359a"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==1.0.1"
+        },
         "gunicorn": {
             "hashes": [
                 "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e",
@@ -55,6 +86,14 @@
             ],
             "index": "pypi",
             "version": "==20.1.0"
+        },
+        "idna": {
+            "hashes": [
+                "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff",
+                "sha256:9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
+            ],
+            "markers": "python_version >= '3.5'",
+            "version": "==3.3"
         },
         "itsdangerous": {
             "hashes": [
@@ -117,6 +156,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.1"
+        },
+        "mongoengine": {
+            "hashes": [
+                "sha256:01baac85f408f5eefb6195c0afeae631e7fc6fab5cb221a7b46646f94227d6da",
+                "sha256:68878b65bcb3751debcba4342180a180161cdb5f46525027e622ad081dd44fac"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==0.24.1"
         },
         "pymongo": {
             "hashes": [
@@ -237,6 +284,17 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.2"
+        },
+        "wtforms": {
+            "extras": [
+                "email"
+            ],
+            "hashes": [
+                "sha256:6b351bbb12dd58af57ffef05bc78425d08d1914e0fd68ee14143b7ade023c5bc",
+                "sha256:837f2f0e0ca79481b92884962b914eba4e72b7a2daaf1f939c890ed0124b834b"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==3.0.1"
         }
     },
     "develop": {}
