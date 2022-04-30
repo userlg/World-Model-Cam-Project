@@ -6,8 +6,11 @@ load_dotenv()
 class Config(object):
     CSRF_ENABLED = True
     TESTING = False
-    SERVER_NAME='WMC'
+    #SERVER_NAME='WorldModelCam.com'
     SECRET_KEY=os.environ.get('SECRET_KEY')
+    MONGODB_SETTINGS = {
+    'host':'mongodb://localhost/wmc_db'
+}
 
 class ProductionConfig(Config):
    ENV = os.environ.get("prod_env")

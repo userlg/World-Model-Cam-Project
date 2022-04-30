@@ -1,5 +1,5 @@
 
-
+$pink: #CB3784;
 
 html, body {
     margin: 0;
@@ -8,5 +8,10 @@ html, body {
 
 
 body {
-    background-color: #fefe44;
+    background-color:  $pink;
+}
+
+
+.f-style {
+    font-size: 3.4vw;
 }
