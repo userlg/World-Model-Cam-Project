@@ -8,3 +8,8 @@ class User(me.Document):
     username = me.StringField(required=True,trim=True,unique=True)
     password = me.StringField(required=True)
     create_at = me.DateTimeField(required=True,default=datetime.datetime.now())
+
+
+    def verify_password(self, password) -> bool:
+        return check_password_hash(self.password, password)
+

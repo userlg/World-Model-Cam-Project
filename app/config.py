@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+import json
 import os
 
 load_dotenv()
@@ -8,14 +9,13 @@ class Config(object):
     TESTING = False
     #SERVER_NAME='WorldModelCam.com'
     SECRET_KEY=os.environ.get('SECRET_KEY')
-    MONGODB_SETTINGS = {
-    'host':'mongodb://localhost/wmc_db'
-}
+    MONGODB_SETTINGS =  json.loads( os.environ.get('MONGODB_SETTINGS'))
+
 
 class ProductionConfig(Config):
    ENV = os.environ.get("prod_env")
    DEBUG = os.environ.get("prod_debug")
-   MONGO_URI = os.environ.get("prod_mongo_uri")
+   MONGO_URI =  os.environ.get("prod_mongo_uri")
 
 
 class DevelopmentConfig(Config):

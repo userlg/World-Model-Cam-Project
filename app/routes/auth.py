@@ -6,7 +6,7 @@ from ..models.users import User
 auth_bp = Blueprint("auth_bp", __name__)
 
 
-@auth_bp.route('/signup',methods=['GET','Post'])
+@auth_bp.route('/signup',methods=['GET','POST'])
 def signup():
     
     try:
@@ -18,3 +18,13 @@ def signup():
     except Exception as e:
         message = {"message":"Error Adding New User"}
         return jsonify(message),501
+
+
+@auth_bp.route('/login',methods=['GET'])
+def login():
+    pass
+
+@auth_bp.route('/logout',methods=['GET'])
+def logout():
+    pass
+
