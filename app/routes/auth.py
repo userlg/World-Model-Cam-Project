@@ -1,6 +1,7 @@
-from flask import render_template, Blueprint, redirect, jsonify, request
+from flask import render_template, Blueprint, redirect, jsonify, request, make_response
 from werkzeug.security import generate_password_hash
 from ..models.users import User
+
 
 
 auth_bp = Blueprint("auth_bp", __name__)
@@ -19,10 +20,6 @@ def signup():
         message = {"message":"Error Adding New User"}
         return jsonify(message),501
 
-
-@auth_bp.route('/login',methods=['GET'])
-def login():
-    pass
 
 @auth_bp.route('/logout',methods=['GET'])
 def logout():

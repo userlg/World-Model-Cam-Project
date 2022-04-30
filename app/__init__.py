@@ -2,7 +2,6 @@ from flask import Flask
 from .routes.views import views_bp
 from .routes.auth import auth_bp
 from flask_mongoengine import MongoEngine
-from flask_pymongo import PyMongo
 
 from .config import DevelopmentConfig, ProductionConfig
 
