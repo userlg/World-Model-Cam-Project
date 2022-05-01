@@ -1,4 +1,5 @@
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, jsonify, make_response
+from ..models.users import User
 
 views_bp = Blueprint("views_bp", __name__)
 
@@ -9,3 +10,11 @@ def index():
     #number = randint(1,10)
 
     return render_template('index.html')
+
+
+
+@views_bp.route('/all_users',methods=['GET'])
+def all_users():
+    result = User.objects.all()
+    response = make_response({"Operation":"Successfull","users":result})
+    return jsonify(result),200
