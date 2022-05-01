@@ -20,6 +20,20 @@ def signup():
         message = {"message":"Error Adding New User"}
         return jsonify(message),501
 
+@auth_bp.route('/login/<id>',methods=['POST'])
+def login(id: str):
+   try:
+         #result = User.objects(id=id).first_or_404()
+         result = User.objects.get_or_404(id=id)
+
+         if result != None:
+           return jsonify(result)
+   except User.DoesNotExist as e:
+        print(e)
+        return jsonify({"message":" A problem happened","error":e}),501
+    
+
+
 
 @auth_bp.route('/logout',methods=['GET'])
 def logout():

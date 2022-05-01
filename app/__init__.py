@@ -15,8 +15,9 @@ host = environ.get('HOST')
 def create_app() -> Flask:
     app = Flask(__name__)
     app.config.from_object(DevelopmentConfig())
+    
     #app.config.from_object(ProductionConfig())
-    db = MongoEngine(app)
+    MongoEngine(app)
 
     #Register of the Blueprints
 
